@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Mover Effect</title>
+</head>
+
+    <style>
+        
+        .list {
+            list-style: none;
+        }
+
+        .list li::before{
+            content: "\1F384";
+            padding-inline-end: .75em;
+            display: inline-block;
+            transition: transform 100ms;
+        }
+
+        .list li:hover::before{
+            transform: translateX(.30rem);
+        } 
+
+    </style>
+
+<body>
+
+    <ul class="list">
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+    </ul>
+    
+</body>
+</html>

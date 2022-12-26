@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список </title>
+<style>
+        
+    .list {
+        list-style: none;
+    }
+
+    .list li::before{
+        content: '\1F605';
+        padding-inline-end: .75em;
+        display: inline-block;
+        transition: transform 100ms;
+    }
+
+    .list li::after {
+        content: '\1F605';
+        padding-inline-end: .75em;
+        display: inline-block;
+        transition: transform 100ms;
+    }
+
+    .list li:hover::before{
+        transform: translateX(1rem);
+    } 
+
+    .list li:hover::after{
+        transform: translateX(-0.2rem);
+    } 
+</style>
+</head>
+<body>
+
+    <ul class="list">
+        <li> <a href="list_hover_effect.html">List Hover Effect</a> </li>
+        <li> <a href="Loading.html">Loading</a> </li>
+        <li> <a href="glass.html">Glass</a> </li>
+        <li> <a href="clock.html">Clock</a> </li>
+        <li> <a href="music_wave.html">Music Wave</a> </li>
+
+    </ul>
+
+</body>
+</html>
